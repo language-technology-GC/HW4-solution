@@ -2,7 +2,7 @@ To replicate:
 
 1.  Create a file `APIKEY` containing your Rev.ai API key.
 
-2.  Use [`./submit.py`](submit.py) to submit jobs:
+2.  Use [`submit.py`](submit.py) to submit jobs:
 
         ./submit.py
 
