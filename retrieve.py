@@ -15,7 +15,7 @@ def main() -> None:
     client = apiclient.RevAiAPIClient(token)
     transcribed = 0
     tsv_writer = csv.writer(sys.stdout, delimiter="\t")
-    for job in client.get_list_of_jobs():
+    for job in client.get_list_of_jobs(limit=1000):
         assert job.status.name == "TRANSCRIBED", f"Unexpected status: {job.id}"
         flac_path = job.name
         logging.info("Getting transcript for %s...", flac_path)

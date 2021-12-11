@@ -17,4 +17,4 @@ To replicate:
 
         ./wer.py gold.tsv hypo.tsv
 
-I obtain a WER of 19.30.
+I obtain a WER of 17.81.
